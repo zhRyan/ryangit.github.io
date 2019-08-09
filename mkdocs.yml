@@ -1,0 +1,17 @@
+site_name: FitGreat
+nav:
+- Home: 'index.md'
+- User Guide:
+    - 'Writing your docs': 'writing-your-docs.md'
+    - 'Styling your docs': 'styling-your-docs.md'
+- About:
+    - 'License': 'license.md'
+    - 'Release Notes': 'release-notes.md'
+- Bug Tracker:  /bugs/
+site_description: docs for fitgreat APIs
+theme: 
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+        - yaml
+        - rust
