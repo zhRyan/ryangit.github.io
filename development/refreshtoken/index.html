@@ -7,17 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <link rel="shortcut icon" href="./img/favicon.ico">
-  <title>FitGreat</title>
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Refresh Token - FitGreat</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  <link href="./css/extra.css" rel="stylesheet">
+  <link href="../../css/extra.css" rel="stylesheet">
   
-  <script src="./js/jquery-2.1.1.min.js" defer></script>
-  <script src="./js/modernizr-2.8.3.min.js" defer></script>
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Refresh Token";
+    var mkdocs_page_input_path = "development/refreshtoken.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
@@ -32,9 +39,9 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="./." class="icon icon-home"> FitGreat</a>
+        <a href="../.." class="icon icon-home"> FitGreat</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
@@ -46,7 +53,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="./summary/">概述</a>
+    <a class="" href="../../summary/">概述</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -55,35 +62,38 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="./development/prepare/">准备工作</a>
+    <a class="" href="../prepare/">准备工作</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="./development/authorizationcode/">授权码模式</a>
+    <a class="" href="../authorizationcode/">授权码模式</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="./development/resourceownerpassword/">密码模式</a>
+    <a class="" href="../resourceownerpassword/">密码模式</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="./development/clientcredentials/">客户端模式</a>
+    <a class="" href="../clientcredentials/">客户端模式</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Refresh Token</a>
+    <ul class="subnav">
+            
+    </ul>
                 </li>
                 <li class="">
                     
-    <a class="" href="./development/refreshtoken/">Refresh Token</a>
+    <a class="" href="../apipost/">Resource API调用</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="./development/apipost/">Resource API调用</a>
+    <a class="" href="../introspection/">Introspection</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="./development/introspection/">Introspection</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="./development/revocation/">Revocation</a>
+    <a class="" href="../revocation/">Revocation</a>
                 </li>
     </ul>
 	    </li>
@@ -94,18 +104,18 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="./development/accesstoken/">登陆</a>
+    <a class="" href="../accesstoken/">登陆</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="./development/accesstoken/">管理客户端</a>
+    <a class="" href="../accesstoken/">管理客户端</a>
                 </li>
     </ul>
 	    </li>
           
             <li class="toctree-l1">
 		
-    <a class="" href="./API/errors/">常见问题</a>
+    <a class="" href="../../API/errors/">常见问题</a>
 	    </li>
           
         </ul>
@@ -118,7 +128,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="./.">FitGreat</a>
+        <a href="../..">FitGreat</a>
       </nav>
 
       
@@ -126,9 +136,15 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="./.">Docs</a> &raquo;</li>
+    <li><a href="../..">Docs</a> &raquo;</li>
     
+      
+        
+          <li>开发文档 &raquo;</li>
+        
+      
     
+    <li>Refresh Token</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -138,22 +154,44 @@
           <div role="main">
             <div class="section">
               
+                <p><strong>认证服务器接口地址</strong>
+<table>
+    <tr>
+        <td>地址</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>https://login.fitgreat.cn/oauth/v2/access_token</td>
+        <td>token获取接口地址</td>
+    </tr>
+</table></p>
+<p>如果用户访问的时候，客户端的"访问令牌"已经过期，则需要使用"更新令牌"申请一个新的访问令牌。</p>
+<p>客户端发出更新令牌的HTTP请求，包含以下参数：</p>
+<pre><code>granttype：表示使用的授权模式，此处的值固定为"refreshtoken"，必选项。
+refresh_token：表示早前收到的更新令牌，必选项。
+scope：表示申请的授权范围，不可以超出上一次申请的范围，如果省略该参数，则表示与上一次一致。
+</code></pre>
+<p>下面是一个例子。</p>
+<pre><code>     POST /token HTTP/1.1
+     Host: server.example.com
+     Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
+     Content-Type: application/x-www-form-urlencoded
 
-  <h1 id="search">Search Results</h1>
-
-  <form id="content_search" action="search.html">
-    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" autocomplete="off" autofocus title="Type search term here">
-  </form>
-
-  <div id="mkdocs-search-results" class="search-results">
-    Searching...
-  </div>
-
-
+     grant_type=refresh_token&amp;refresh_token=tGzv3JOkF0XG5Qx2TlKWIA
+</code></pre>
+              
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../apipost/" class="btn btn-neutral float-right" title="Resource API调用">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../clientcredentials/" class="btn btn-neutral" title="客户端模式"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -177,12 +215,16 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href="../clientcredentials/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../apipost/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
-    <script>var base_url = '.';</script>
-    <script src="./js/theme.js" defer></script>
-      <script src="./search/main.js" defer></script>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
 
 </body>
 </html>
